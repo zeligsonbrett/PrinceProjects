@@ -3,7 +3,7 @@
 
   <head>
     <!-- usually this can just be the headline -->
-    <title>Princeton's Controversial Lands</title>
+    <title>Power and Money at Princeton</title>
     <!-- 
         CHANGE THIS! "preview-img.png" defines what the preview image will be for 
         links and social media, so be sure to change this to whatever the
@@ -23,6 +23,8 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+    <!-- ensures mobile layout works-->
+    <meta name="viewport" content="width=device-width">
 
     <!-- link to our logo for favicon -->
     <link rel="icon" type="image/png"
@@ -45,7 +47,7 @@
         editor know and it can be added) 
     -->
     <link rel="stylesheet" href="https://use.typekit.net/gkx8zdh.css">
-
+  
     <!-- Importing Google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&display=swap" rel="stylesheet">
@@ -58,18 +60,21 @@
     </script>
 
     <!-- add references to additional scripts here if needed -->
+    <link href="nav.css" rel="stylesheet" type="text/css" />
+   
   </head>
 
   <body>
-    <div class="topnav navbar sticky">
-      <p class="name-logo"><a href="https://www.dailyprincetonian.com/"
-          style="font-family: minion-pro; font-size: 24px; margin-top: 0px; padding-top: 0px; ">THE
-          DAILY PRINCETONIAN <span style="font-family: franklin-gothic-urw-cond, sans-serif"> | OPINION </span></a></p>
-      <div class="topnav-right">
+    <nav id="top-nav">
+      <a href="https://www.dailyprincetonian.com/"
+      style="font-family: minion-pro; font-size: 24px; margin-top: 0px; padding-top: 0px; ">THE
+      DAILY PRINCETONIAN <span style="font-family: franklin-gothic-urw-cond, sans-serif"> | OPINION </span></a>
+      <span class="menu-icon" onclick="expand()">&#9776;</span>
+      <div class="nav-links">
         <a href="#article1">Part One Article</a>
         <a href="#article2">Part Two Article</a>
       </div>
-    </div>
+    </nav>
 
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -102,8 +107,9 @@
 
     <div id="title-page" class="desktop">
       <div class="centered">
-        <h2 id="overline">OPINION | PRINCETON LAND OWNERSHIP</h2>
-        <h1 id="title"> Title </br> Subtitle</h1>
+        <h2 id="overline">OPINION | DIVEST PRINCETON</h2>
+        <h1 id="title"> Title </br> </h1>
+        <h1 id="title" style="font-size:4vw"> Subitle </h1>
         <br><br><br><h2>Add Image In Here</h2>
         <!-- <img style="padding-top: 50px; padding-bottom: 30px; width: 40%; height: auto; height: auto;"
           src="https://assets.dailyprincetonian.com/projects.dailyprincetonian.com/power-money-at-princeton-divest/nassau-01.png"
@@ -121,17 +127,16 @@
 
         </div>
       </div>
-      <div class="topnav hidden" style="margin-top:-4px;" id="article1">
-        <p class="name-logo"><a style="font-family: minion-pro; font-size: 24px; margin-top: 0px; padding-top: 0px; ">THE
-            DAILY PRINCETONIAN </a><a style="font-family: minion-pro; font-size: 24px; margin-top: 0px; padding-top: 0px"><span
-              style="font-family: 'Bodoni Moda', serif; font-weight: 600; white-space: pre;">| Divest
-              Princeton</a></span></p>
-        <div class="topnav-right">
-          <a>Filler1</a>
-          <a>Filler2</a>
-          <a>Filler3</a>
+      <nav class="topnav hidden" id="article1">
+        <a href="https://www.dailyprincetonian.com/"
+        style="font-family: minion-pro; font-size: 24px; margin-top: 0px; padding-top: 0px; ">THE
+        DAILY PRINCETONIAN <span style="font-family: franklin-gothic-urw-cond, sans-serif"> | OPINION </span></a>
+        <span class="menu-icon" onclick="expand()">&#9776;</span>
+        <div class="nav-links">
+          <a>Part One Article</a>
+          <a>Part Two Article</a>
         </div>
-      </div>
+      </nav>
     </div>
 
 
@@ -143,7 +148,6 @@
         <p>First Article Title</p>
         <span style="font-size: 32px; font-style: italic;">Subtitle</span>
       </h1>
-      <h2 class="article-byline">Byline </h2>
 
 
       <div class="main">
@@ -170,25 +174,22 @@
     <div class="article">
 
     </div>
-    <div class="topnav hidden" style="margin-top:-4px;" id="article2">
-      <p class="name-logo"><a style="font-family: minion-pro; font-size: 24px; margin-top: 0px; padding-top: 0px; ">THE
-          DAILY PRINCETONIAN </a><a style="font-family: minion-pro; font-size: 24px; margin-top: 0px; padding-top: 0px"><span
-            style="font-family: 'Bodoni Moda', serif; font-weight: 600; white-space: pre;">| Divest
-            Princeton</a></span></p>
-      <div class="topnav-right">
-        <a>Filler1</a>
-        <a>Filler2</a>
-        <a>Filler3</a>
+    <nav class="topnav hidden" id="article2">
+      <a href="https://www.dailyprincetonian.com/"
+      style="font-family: minion-pro; font-size: 24px; margin-top: 0px; padding-top: 0px; ">THE
+      DAILY PRINCETONIAN <span style="font-family: franklin-gothic-urw-cond, sans-serif"> | OPINION </span></a>
+      <span class="menu-icon" onclick="expand()">&#9776;</span>
+      <div class="nav-links">
+        <a>Part One Article</a>
+        <a>Part Two Article</a>
       </div>
-    </div>
+    </nav>
       </div>
-      <h1 class="article-title" class="article-title2" id="title2">
+      <h1 class="article-title" id="title2">
         <p>Second Article Title </p>
         <span style="font-size: 32px; font-style: italic;">Subtitle </span>
       </h1>
 
-    
-        <h2 class="article-byline">Byline</h2>
         <div class="main">
         <p>Text</p>
         <a href="https://www.dailyprincetonian.com/">Example Link</a>
@@ -225,7 +226,7 @@
       </h4>
 
       <div id="credit">
-        <h3>Web design by Brett Zeligson</br>Graphics design by ...
+        <h3>Web design by ...</br>Graphics design by ...
         </h3>
       </div>
 
