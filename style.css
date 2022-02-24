@@ -7,6 +7,7 @@
 html, body {
   padding: 0px;
   margin: 0px;
+  background-color: #F8F4EA;
 }
 
 .logo{
@@ -84,7 +85,6 @@ padding-bottom:0px;
 
 .dommedia{
   display: block;
-  
   margin:auto;
   /*
   margin-top:3%;
@@ -116,8 +116,8 @@ padding-bottom:0px;
 }
 
 #title-page {
-  background-color: #f2e9e4;
-  color: #22223b;
+  background-color: none;
+  color: #1A1A1A;
   padding-top: 120px;
   text-align: center;
   
@@ -179,30 +179,26 @@ img {
 }
 
 .main {
-  background-color: white;
-  color: #22223b;
+  background-color: #F8F4EA;
+  color: #1A1A1A;
   margin-left: 20%;
   margin-right: 20%;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
 blockquote{
-  font-size: 1.4em;
+  font-size: 2em;
   width:60%;
-  margin:50px auto;
-  font-family:Open Sans;
-  font-style:italic;
+  margin-left: 30px;
   color: #22223b;
-  padding:1.2em 30px 1.2em 75px;
-  border-left:8px solid #22223b;
-  line-height:1.6;
+  padding: 0px;
+  line-height:1.7;
   position: relative;
   background:#2475c000;
 }
 
 blockquote::before{
   font-family:Arial;
-  content: "\201C";
   color: #22223b;
   font-size:4em;
   position: absolute;
@@ -210,17 +206,22 @@ blockquote::before{
   top:-10px;
 }
 
-blockquote::after{
-  content: '';
+.highlight-line {
+  color: #d6614f;
+  margin-left: -30px;
+  font-size: 80px;
+  font-weight: 1000;
+  line-height: 0px;
 }
 
+
 blockquote span{
+  font-size: 0.75em;
   display:block;
+  align-content: right;
   color:#333333;
   font-family:Open Sans;
-  font-style:italic;
   font-weight: bold;
-  margin-top:1em;
 }
 
 /* pullquote styles */
@@ -232,6 +233,17 @@ blockquote span{
     font-weight: 550;
     line-height: 1.1;
     padding-top: 10px;
+}
+
+  
+.quote-attribution {
+  margin-right: -2wv;
+  text-align: right;
+  font-size: 25px;
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  color: rgb(40,40,40);
 }
 
 .graphic-title{
@@ -311,9 +323,9 @@ browser window really skinny */
 
 .article-title {
   /* font-family: 'Bodoni Moda', serif; */
-  background-color: #22223b;
+  background-color: #1A1A1A;
   font-size: 50px;
-  color: white;
+  color: #F8F4EA;
   padding-top: 60px;
   padding-bottom: 60px;
   width: 100%;

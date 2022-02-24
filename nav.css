@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1.25rem;
-  background-color: white;
+  background-color: #d6614f;
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
   z-index: 3;
   width: 100%;
@@ -15,7 +15,7 @@
 }
 
 #top-nav a {
-  color: black;
+  color: #F8F4EA;
   text-decoration: none;
 }
 
@@ -23,8 +23,8 @@
 #top-nav .nav-links a:active,
 #top-nav .nav-links a:focus {
   /* font-weight: 600; */ /* Become bold on hover of nav link */
-  font-style: italic; /* Underline on hover of nav link */
-  color: #aa9894;
+  color: #F8F4EA;
+  font-weight: bolder;
 }
 
 .nav-brand {
@@ -61,6 +61,8 @@
 .menu-icon {
   display: none;
   cursor: pointer;
+  color: #F8F4EA;
+  font-weight: bolder;
 }
 
 #top-nav + div,
