@@ -19,6 +19,13 @@
   text-decoration: none;
 }
 
+.nav-title{
+  font-family: minion-pro;
+  font-size: 24px;
+  margin-top: 0px;
+  padding-top: 0px; 
+}
+
 #top-nav .nav-links a:hover,
 #top-nav .nav-links a:active,
 #top-nav .nav-links a:focus {
@@ -102,5 +109,9 @@
 
   .nav-brand {
     font-size: calc(0.5rem + 3vw);
+  }
+
+  .nav-title {
+    font-size: 18px;
   }
 }
