@@ -411,6 +411,11 @@ browser window really skinny */
 
 @media screen and (max-width: 800px) {
 
+  #intro {
+    margin-left:5%;
+    margin-right:5%
+  }
+
      #timeline-img{
        
        width: 740px;
