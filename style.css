@@ -122,6 +122,10 @@ padding-bottom:0px;
   font-weight: 400;
 }
 
+#byline{
+  font-size:2.6vw; line-height:1.2; font-style: italic
+}
+
 #title-page {
   color: #1A1A1A;
   background-image: url('Home Background.svg');
@@ -130,7 +134,20 @@ padding-bottom:0px;
   padding-right: 5%;
   padding-left: 5%;
   margin: 0;
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: initial;
 }
+
+.no-touch #title-page {
+  background-attachment: fixed;
+
+}
+
+
 #overline {
   text-align: center;
   font-family: franklin-gothic-urw-cond, sans-serif;
@@ -345,6 +362,7 @@ browser window really skinny */
       line-height: 40px;
       padding-top: 32px;
       padding-bottom: 1px;
+   
     }   
 }
 
@@ -396,6 +414,20 @@ browser window really skinny */
        
        width: 740px;
        height: 500px;  
+  }
+
+  #title {
+    /* font-family:'Bodoni Moda', serif; */
+    text-align: center;
+    font-size: 45px;
+    line-height: 1;
+    margin-bottom: 0%;
+    margin-top: 0px;
+    padding-top: 16px;
+  }
+
+  #byline{
+    font-size: 25px;
   }
 }
 
