@@ -140,7 +140,7 @@ padding-bottom:0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: initial;
-  border-color: blue;
+
 }
 
 .no-touch #title-page {
@@ -226,7 +226,7 @@ blockquote::before{
   color: #22223b;
   font-size:4em;
   position: absolute;
-  left: 10px;
+  /* left: 10px; */
   top:-10px;
 }
 
