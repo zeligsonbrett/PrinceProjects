@@ -15,13 +15,20 @@ html, body {
     font-family: minion-pro;
 }
 
+.container {
+  position: absolute;
+  top: 100px;
+  right: -110px;
+  left: -30px;
+}
+
 .logo a{
     color: black;
     text-decoration: none;
 }
 
 a {
-  color: #a08b86;
+  color: #c24532;
   text-decoration: none;
   
 }
@@ -136,7 +143,7 @@ padding-bottom:0px;
 #title {
   /* font-family:'Bodoni Moda', serif; */
   text-align: center;
-  font-size: 7vw;
+  font-size: 6.5vw;
   line-height: 1;
   margin-bottom: 0%;
   margin-top: 0px;
@@ -188,11 +195,11 @@ img {
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
 blockquote{
   font-size: 2em;
-  width:60%;
+  width:100%;
   margin-left: 30px;
   color: #22223b;
   padding: 0px;
-  line-height:1.7;
+  line-height: 45px;
   position: relative;
   background:#2475c000;
 }
@@ -207,7 +214,7 @@ blockquote::before{
 }
 
 .highlight-line {
-  color: #d6614f;
+  color: #c24532;
   margin-left: -30px;
   font-size: 80px;
   font-weight: 1000;
@@ -218,6 +225,7 @@ blockquote::before{
 blockquote span{
   font-size: 0.75em;
   display:block;
+  padding-bottom: 17px;
   align-content: right;
   color:#333333;
   font-family:Open Sans;
@@ -316,22 +324,24 @@ browser window really skinny */
       margin-right: 4%;
     }
 
+    .overline{
+      font-size: 2vw;
+    }
+
    
   }
-
-
 
 .article-title {
   /* font-family: 'Bodoni Moda', serif; */
   background-color: #1A1A1A;
   font-size: 50px;
   color: #F8F4EA;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 1px;
   width: 100%;
   text-align: center;
-  line-height: 2px;
-  margin-bottom: 0;
+  line-height: 60px;
+  margin-bottom: 0px;
 }
 
 
@@ -340,17 +350,10 @@ browser window really skinny */
      .article-title{
       font-size: 40px;
       line-height: 40px;
-      padding-top: 20px;
-      padding-bottom: 25px;
-    }
-
-
-   
-  }
-
-
-
-
+      padding-top: 32px;
+      padding-bottom: 1px;
+    }   
+}
 
 .article-byline {
   font-family: franklin-gothic-urw;
@@ -370,19 +373,16 @@ browser window really skinny */
   
   color: #22223b;
   font-family: sans-serif;
-  padding-top: 120px;
+  padding-top: 20px;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   padding-right: 5%;
   padding-left: 5%;
   margin-left: 25%;
   margin-right: 25%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
-
-  
+  align-items: center;  
 }
 
 #credit{
@@ -392,8 +392,8 @@ browser window really skinny */
 
 #timeline{
   margin-top: 80px;
- margin-bottom: 0px;
- padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 
 }
 
@@ -402,13 +402,69 @@ browser window really skinny */
      #timeline-img{
        
        width: 740px;
-       height: 500px;
-       
-    
+       height: 500px;  
+  }
 }
-       
-       
-    }
 
+p input {
+  display: none;
+}
 
-   
+/* Sup text */
+p input + label {
+  vertical-align: super;
+  cursor: pointer;
+  transition: color 0.1s;
+  font-size: 15px;
+}
+
+p input + label:hover {
+  color: #c24532;
+}
+
+/* Footnote text */
+
+small {
+  color: #838374;
+  font-size: 0.875em;
+}
+
+p input + label + small {
+  transition: opacity 0.2s 0.05s;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+p input:checked + label + small {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* hover reveal */
+p.hover input + label + small,
+p.hover input:checked + label + small {
+  display: none;
+}
+
+p.hover input + label:hover + small {
+  font-size:.8em;
+  z-index: 1;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  padding: 0.3em 0.8em 0.4em;
+  border-bottom: 1px;
+  margin-right: 20vw;
+  margin-left: 20vw;
+  right: 4ch;
+  left: 4ch;
+  background: #222222ee;
+  color: #eee;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
