@@ -123,11 +123,10 @@ padding-bottom:0px;
 }
 
 #title-page {
-  background-color: none;
   color: #1A1A1A;
+  background-image: url('https://raw.githubusercontent.com/zeligsonbrett/opinion-web-housing-area/39553b79144242a21290312a210cae858e070c2e/Home%20Background.svg?token=AUPAEQ24CZ6NWJK5YNQF2CLCEE7IE');
   padding-top: 120px;
   text-align: center;
-  
   padding-right: 5%;
   padding-left: 5%;
   margin: 0;

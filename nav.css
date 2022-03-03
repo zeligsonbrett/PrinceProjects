@@ -12,6 +12,7 @@
   width: 100%;
   position: fixed;
   top: 0;
+  font-size:24px;
 }
 
 #top-nav a {
@@ -112,6 +113,6 @@
   }
 
   .nav-title {
-    font-size: 2px;
+    font-size: 21px;
   }
 }
