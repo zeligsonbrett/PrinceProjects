@@ -346,7 +346,7 @@ browser window really skinny */
       margin-right: 4%;
     }
 
-    .overline{
+    #overline{
       margin-top:-40px;
       font-size: 200px;
     }
