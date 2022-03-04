@@ -345,6 +345,10 @@ browser window really skinny */
       margin-left: 4%;
       margin-right: 4%;
     }
+
+    .overline{
+      margin-top:-40px;
+    }
   }
 
 .article-title {
@@ -503,11 +507,4 @@ p.hover input + label:hover + small {
   border-radius: 3px;
   pointer-events: none;
 }
-
-@media screen and (max-width: 900px){
-  .article-title{
-    background-color: #c24532;
-  }
-}
-
 
