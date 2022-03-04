@@ -129,6 +129,7 @@ padding-bottom:0px;
 #title-page {
   color: #1A1A1A;
   background-image: url('Home Background.svg');
+  /* background-color: green; */
   padding-top: 120px;
   text-align: center;
   padding-right: 5%;
@@ -136,10 +137,13 @@ padding-bottom:0px;
   margin: 0;
 
 
-  background-position: bottom;
+   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: initial;
+  background-attachment: initial; 
+
+  background-position: -10px 30px; 
+  background-size: 125% 125%;
 
 }
 
