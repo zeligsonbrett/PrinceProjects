@@ -160,6 +160,7 @@ padding-bottom:0px;
   font-weight: 300;
   margin-bottom: 0px;
   padding-bottom: 0px;
+  margin-top:-20px;
 }
 #title {
   /* font-family:'Bodoni Moda', serif; */
@@ -343,6 +344,10 @@ browser window really skinny */
     .main{
       margin-left: 4%;
       margin-right: 4%;
+    }
+
+    .overline{
+      margin-top:-40px;
     }
   }
 
