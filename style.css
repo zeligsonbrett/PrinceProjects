@@ -335,8 +335,10 @@ browser window really skinny */
 .transition {
   padding-bottom: 0px;
 }
-@media only screen and (max-width: 1000px) {
-
+@media screen and (max-width: 1000px) {
+    .article{
+      background-color: #1A1A1A;
+    }
     .logo{
         font-size: 20px;
     }
