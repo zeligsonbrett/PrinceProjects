@@ -160,6 +160,7 @@ font-size: 3vw;
 font-weight: 300;
 margin-bottom: 0px;
 padding-bottom: 0px;
+margin-top:-20px;
 }
 #title {
 /* font-family:'Bodoni Moda', serif; */
@@ -279,11 +280,18 @@ color: rgb(40,40,40);
 font-family: franklin-gothic-urw, sans-serif;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1500px) {
   .pullquote {
       max-width: 60%;
       float: left;
       margin-right: 1em;
+  }
+  #title-page .separator{
+    margin-top: 110px;
+  }
+
+  #overline{
+    margin-top:10px;
   }
 }
 
@@ -293,7 +301,6 @@ font-family: franklin-gothic-urw, sans-serif;
       margin-left: -2.5em;
       max-width: 70%;
   }
-
 }
 
 /* pullquote2 styles */
@@ -343,6 +350,10 @@ padding-bottom: 0px;
   .main{
     margin-left: 4%;
     margin-right: 4%;
+  }
+  #overline{
+    font-size: 1.5em;
+    margin-top: -50px;
   }
 }
 
@@ -410,9 +421,23 @@ text-align: center;
 margin-top: 80px;
 margin-bottom: 0px;
 padding-bottom: 0px;
-
 }
 
+.mobile-spacer{
+  margin: 0px;
+  padding: 0px;
+}
+
+.separator{
+  margin: 0px;
+  padding: 0px;
+}
+
+@media screen and (max-width: 444px) {
+  .article-title {
+    margin-top: -60px;
+  }
+}
 @media screen and (max-width: 800px) {
 
 #intro {
@@ -420,10 +445,10 @@ padding-bottom: 0px;
   margin-right:5%
 }
 
-   #timeline-img{
+#timeline-img{
      
-     width: 740px;
-     height: 500px;  
+  width: 740px;
+  height: 500px;  
 }
 
 #title {
