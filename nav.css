@@ -22,7 +22,7 @@
 
 .nav-title{
   font-family: minion-pro;
-  font-size: 20x;
+  font-size: 20px;
   margin-top: 0px;
   padding-top: 0px; 
 }
@@ -115,4 +115,13 @@
   .nav-title {
     font-size: 21px;
   }
+}
+
+@media screen and (max-width: 355px) {
+  #top-nav a {
+    font-size: 4.7vw;
+    margin-left: -10px;
+  }
+
+
 }
