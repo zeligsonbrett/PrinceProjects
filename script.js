@@ -12,21 +12,20 @@ function expand() {
   }
 }
 
-$(document).scroll(function() {
+// $(document).scroll(function() {
 
-  myID = document.getElementById("button");
+//   myID = document.getElementById("button");
 
-  var myScrollFunc = function () {
-      var y = window.scrollY;
-      if (y >= 100) {
-          myID.className = "button show"
-      } else {
-          myID.className = "button hide"
-      }
-  };
-
-
+//   var myScrollFunc = function () {
+//       var y = window.scrollY;
+//       if (y >= 100) {
+//           myID.className = "button show"
+//       } else {
+//           myID.className = "button hide"
+//       }
+//   }});
 
 
- 
+
+
 
